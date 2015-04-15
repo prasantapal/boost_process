@@ -41,10 +41,10 @@ ba::windows::stream_handle in(io_service);
 
 bp::child start_child() 
 { 
-    std::string exec = "bjam.exe"; 
+    std::string exec = "./bjam"; 
 
     std::vector<std::string> args; 
-    args.push_back("bjam.exe"); 
+    args.push_back(exec); 
     args.push_back("--version"); 
 
     bp::context ctx; 
